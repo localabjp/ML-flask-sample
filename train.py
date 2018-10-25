@@ -14,7 +14,7 @@ regr = linear_model.RidgeCV(alphas= np.arange(0.1,10.0,.5))
 regr.fit(X_train, y_train)
 
 #モデルをシリアライズしファイル名「winemodel.pkl」で保存
-pickle.dump(regr,open("model.pkl","wb"))
+pickle.dump(regr,open("winemodel.pkl","wb"))
 
 #エラーチェック
 ans = regr.predict(X_test)
